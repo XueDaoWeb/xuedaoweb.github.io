@@ -14,6 +14,7 @@ article, aside, details, figure, footer, header, nav, section, summary {
 /* vertical scroll */
 html {
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 /* Default Background Color, Font and Line */
