@@ -14,7 +14,6 @@ article, aside, details, figure, footer, header, nav, section, summary {
 /* vertical scroll */
 html {
     overflow-y: scroll;
-    overflow-x: hidden;
 }
 
 /* Default Background Color, Font and Line */
@@ -268,3 +267,167 @@ menu-list {
 .footer a {
     color: #fff;
 }
+
+/* Booking */
+.msg {
+    background-color: #fff!important;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    display: block;
+    float: right;
+    width: 100%;
+    height: 100%;
+    z-index: 1100;
+    visibility: hidden;
+    -webkit-transition: visibility .5s ease-in-out;
+    -moz-transition: visibility .5s ease-in-out;
+    transition: visibility .5s ease-in-out;
+}
+.booking-active .msg {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    display: block;
+    visibility: visible;
+}
+.modal-body {
+    position: relative;
+    padding: 20px;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.btn-success {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+.btn-success:hover {
+    color: #fff;
+    background-color: #47a447;
+    border-color: #398439;
+}
+
+.btn-sm {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+.btn-sm {
+    margin-bottom: 20px;
+}
+.form-custom .form-control {
+    border: 0 solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-bottom-style: 0 solid #ccc;
+    border-radius: 0;
+    -webkit-box-shadow: inset 0 1px 1px transparent;
+    box-shadow: inset 0 1px 1px transparent;
+}
+.form-control {
+    display: block;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+}
+.form-control {
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.form-control:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
+.form-control::-moz-placeholder {
+    color: #999;
+    opacity: 1;
+}
+textarea.form-control {
+    height: auto;
+}
+.tutor-appointment {
+    padding: 6px 12px;
+    font-size: 20px;
+}
+.close-booking {
+    position: absolute;
+    text-align: left;
+    font-weight: 700;
+    bottom: 20px;
+    left: 10px;
+    width: 33px;
+    height: 13px;
+}
+/* Wechat Share */
+.sbg {
+    z-index: 1200;
+}
+.sbg {
+    width: 100%;
+    height: 100%;
+}
+.sbg {
+    text-align: center;
+}
+.sbg {
+    font-size: 16px;
+    line-height: 34px;
+}
+.sbg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background: rgba(0,0,0,.9);
+}
+
+.sbg .arron {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size:30px;
+}
+.sbg p {
+    padding-top: 78px;
+}
+.close-sbg {
+    position: absolute;
+    text-align: left;
+    bottom: 20px;
+    left: 10px;
+    height: 13px;
+    color:white;
+}
+/* Wrap */

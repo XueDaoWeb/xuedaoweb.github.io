@@ -237,17 +237,14 @@
 .booking a {
     border-radius: 20px;
 }
-
-.btn-hg {
+.btn-booking {
+    background: #8B0000;
+    border: 1px solid #8B0000;
+    color: #fff;
     width: 100%;
     height: 40px;
     line-height: 40px;
     text-align: center;
-}
-.btn-primary {
-    background: #8B0000;
-    border: 1px solid #8B0000;
-    color: #fff;
 }
 .booking {
     width: 100%;
@@ -259,7 +256,7 @@
     text-align: center;
     z-index: 10;
 }
-.btn-primary:hover {
+.btn-booking:hover {
     background: #ab4646;
     border: 1px solid #ab4646;
     color: #fff;
