@@ -22,16 +22,13 @@
             </a>
             <ul class="menu-list">
                 <li class="item">
-                    <a href="#" ><i class="fa fa-weixin fa-stack-1x fa-fw"></i>分享到微信</a>
+                    <a href="javascript:ShowContent('Wechat')"><i class="fa fa-weixin fa-stack-1x fa-fw"></i>分享到微信</a>
                 </li>
                 <li class="item">
-                    <a href="#"><i class="fa fa-weibo fa-stack-1x fa-fw"></i>分享到微博</a>
+                    <a href="javascript:ShowContent('Contact')"><i class="fa fa-user-plus fa-stack-1x fa-fw"></i>成為家教</a>
                 </li>
                 <li class="item">
-                    <a href="#"><i class="fa fa-user-plus fa-stack-1x fa-fw"></i>成為家教</a>
-                </li>
-                <li class="item">
-                    <a href="#"><i class="fa fa-graduation-cap fa-stack-1x fa-fw"></i>關於學道</a>
+                    <a href="javascript:ShowContent('Contact')"><i class="fa fa-envelope fa-stack-1x fa-fw"></i>聯系學道</a>
                 </li>
             </ul>
         </nav>
@@ -93,19 +90,64 @@
                 </div>
             </div>
             <div class="booking">
-                <a id="bookingBtn" class="btn-primary btn-hg" href="#">預約試聽</a>
+                <a class="btn-booking" href="#">預約試聽</a>
             </div>
             <div class="footer">
                 <div class="column">
                     <div class="footer-content">
                         <div class="footer-link">
-                            <a href="/">首頁</a>
-                            <a class="appDownloadBtn app-download" href="#">App</a>
-                            <a href="#">聯系學道</a>
+                            <a href="#">首頁</a>
+                            <a href="#">關於學道</a>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="msg">
+            <div class="modal-body">
+                <div class="booking-appointment">
+                    <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/1SqDAPZ1v3NpfO9UU4L9pWSkYz5BkFlXzxxbQ9UYinJA/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
+                        <button type="submit" data-done="已發送" data-loading="發送中..." data-init="發送" class="pull-right btn btn-success btn-sm">發送</button>
+                        <input type="hidden" name="entry.1616651377" id="entry.1616651377" value="韓超">
+                        <input type="hidden" name="entry.2052391010" id="entry.2052391010" value="免費試聽">
+                        <div class = "form-custom">
+                            <div class="tutor-appointment">免費試聽: 韓超</div>
+                        </div>
+                        <div class = "form-custom">
+                            <input type="text" name="entry.1986988777" id="entry.1986988777" placeholder="您的名字" required="required" class="form-control"/>
+                        </div>
+                        <div class = "form-custom">
+                            <input type="text" name="entry.2090752156" id="entry.2090752156" placeholder="您的郵箱" required="required" class="form-control"/>
+                        </div>
+                        <div class = "form-custom">
+                            <textarea type="text" name="entry.137372529" id="entry.137372529" rows="5" placeholder="留言" class="form-control"></textarea>
+                        </div>
+                    </form>
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+                </div>
+            </div>
+            <div class="close-booking">
+                    <l class="fa fa-chevron-left close-arrow"></l>返回
+            </div>
+        </div>
+        <div id="Wechat" class="sbg">
+            <i class="fa fa-hand-o-up fa-2 arron"></i>
+            <p>
+                請點擊右上角<br/>
+                點擊【發送給朋友】<br/>
+                將名片發給朋友
+            </p>
+            <a href="javascript:HideContent('Wechat')" class="close-sbg"><l class="fa fa-chevron-left close-arrow"></l>返回</a> 
+        </div>
+        <div id="Contact" class="sbg">
+            <p>
+                請查找此微信ID<br/>
+            </p>
+            <h2>我那裡知道!!!</h2><br/>
+            <p>    
+                我們的客服會盡快與你聯系
+            </p>
+            <a href="javascript:HideContent('Contact')" class="close-sbg"><l class="fa fa-chevron-left close-arrow"></l>返回</a> 
         </div>
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
         <script src="scripts/menu.js"></script>
